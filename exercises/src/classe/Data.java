@@ -12,17 +12,22 @@ public class Data {
 
     // construtor default
     public Data() {
-        dia = 1;
-        mes = 1;
-        ano = 1971;
+//        dia = 1;
+//        mes = 1;
+//        ano = 1971;
+        this(1, 1, 1970);
     }
 
     String obterDataFormatada() {
+
         return String.format("%d/%d/%d", dia, mes, ano);
     }
 
     void imprimirDataFormatada() {
-        System.out.printf(obterDataFormatada());
+
+        System.out.printf(this.obterDataFormatada());
     }
+
+
 
 }
