@@ -19,6 +19,10 @@ public class CarroTeste {
         fusca.acelerar();
         fusca.frear();
 
+        ferrari.ligarTurbo();
+        ferrari.desligarTurbo();
+        ferrari.ligarTurbo();
+
         System.out.println("A velocidade da Ferrari é: " + ferrari.velocidadeAtual + " km/h");
         System.out.println("A velocidade do Fusca é: " + fusca.velocidadeAtual + " km/h");
 
