@@ -1,4 +1,4 @@
-package encapsulamento;
+package oo.encapsulamento;
 
 public class PessoaTeste {
     public static void main(String[] args) {
