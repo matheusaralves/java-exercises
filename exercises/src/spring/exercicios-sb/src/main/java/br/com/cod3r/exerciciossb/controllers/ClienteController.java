@@ -19,7 +19,7 @@ public class ClienteController {
     }
 
     // Segunda forma:
-    @GetMapping // EX: http://localhost:8080/clientes?id=123
+    @GetMapping(path = "subtrair") // EX: http://localhost:8080/clientes?id=123
     public Cliente obterClientePorId2(
             @RequestParam(name = "id") int id){
         return new Cliente(id, "João Augusto", "111.222.333-44");
