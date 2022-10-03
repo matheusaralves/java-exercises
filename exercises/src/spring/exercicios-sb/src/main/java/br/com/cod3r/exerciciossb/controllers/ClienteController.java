@@ -1,6 +1,6 @@
 package br.com.cod3r.exerciciossb.controllers;
 
-import br.com.cod3r.exerciciossb.models.Cliente;
+import br.com.cod3r.exerciciossb.model.entities.Cliente;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -19,7 +19,7 @@ public class ClienteController {
     }
 
     // Segunda forma:
-    @GetMapping(path = "subtrair") // EX: http://localhost:8080/clientes?id=123
+    @GetMapping() // EX: http://localhost:8080/clientes?id=123
     public Cliente obterClientePorId2(
             @RequestParam(name = "id") int id){
         return new Cliente(id, "João Augusto", "111.222.333-44");
